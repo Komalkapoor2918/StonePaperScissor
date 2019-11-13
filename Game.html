@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+Komal Kapoor
+Student ID : 991539309
+SYST10199 - Web Programming
+-->
+<html>
+    <head>
+        <title>Game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+            <script>
+                 var comp_score = 0;
+                 var user_score = 0;
+                 
+                do{ 
+                var user_move = prompt("Choose your move:" +"\n"+ "Press 1 for Rock" +"\n"+ "Press 2 for Paper" +"\n"+ "Press 3 for Scissor");
+                             
+  
+  var comp_move = Math.floor((Math.random() * 3) + 1);
+ 
+   
+  if(user_move ==1 && comp_move == 1 ){
+      
+              comp_score;
+              user_score;
+      alert("It's tie" +"\n"+ "You picked Rock.Computer picked Rock"+"\n"+"You:" +user_score+"\n"+ "Computer:" +comp_score);
+        }
+        
+        else if(user_move ==2 && comp_move ==2 ){
+      
+              comp_score;
+              user_score;
+      alert("It's tie" +"\n"+ "You picked Paper.Computer picked Paper" +"\n"+ "You:" +user_score+"\n"+ "Computer:" +comp_score);
+        }
+        
+        else if(user_move ==3 && comp_move == 3 ){
+      
+              comp_score;
+              user_score;
+      alert("It's tie" +"\n"+ "You picked Scissor.Computer picked Scissor"+"\n"+ "You:" +user_score+"\n"+ "Computer:" +comp_score);
+        }
+   
+       else  if(user_move ==1 && comp_move == 2 ){
+      
+              comp_score+= 1;
+              user_score;
+      alert("Computer Wins" +"\n"+ "You picked Rock.Computer picked Paper"+"\n"+ "You:" +user_score+"\n"+ "Computer:" +comp_score);
+        }
+        
+     else if(user_move ==2 && comp_move == 3 ){
+      
+              comp_score+= 1;
+              user_score;
+      alert("Computer Wins" +"\n"+ "You picked Paper.Computer picked Scissor"+"\n"+ "You:" +user_score+"\n"+ "Computer:" +comp_score);
+  }
+  
+  else if(user_move ==3 && comp_move == 1 ){
+      
+              comp_score+= 1;
+              user_score;
+      alert("Computer Wins" +"\n"+ "You picked Scissor.Computer picked Rock"+"\n"+ "You:" +user_score+"\n"+ "Computer:" +comp_score);
+                 }
+                 
+     else if(user_move ==2 && comp_move ==1 ){
+      
+              comp_score;
+              user_score+= 1;
+      alert("You Win" +"\n"+ "You picked Paper.Computer picked Rock"+"\n"+ "You:" +user_score+"\n"+ "Computer:" +comp_score);            
+    }
+    
+    else if(user_move ==3 && comp_move == 2 ){
+      
+              comp_score;
+              user_score+= 1;
+      alert("You Win" +"\n"+ "You picked Scissor.Computer picked Paper"+"\n"+ "You:" +user_score+"\n"+ "Computer:" +comp_score);
+                 }
+                 
+               else  if(user_move ===1 && comp_move === 3 ){
+      
+              comp_score;
+              user_score+= 1;
+      alert("You Win" +"\n"+ "You picked Rock.Computer picked Scissor"+"\n"+ "You:" +user_score+"\n"+ "Computer:" +comp_score);
+                 }
+             }
+             
+            while(confirm("Do you want to play Again"));
+  if(comp_score > user_score){
+      alert ("Final Score:" +"\n"+"You:" + user_score+"\n"+ "Computer:" + comp_score +"\n"+ "Computer Wins!!");
+  }
+  
+  else if(user_score > comp_score){
+      alert ("Final Score:" +"\n"+"You:" + user_score+"\n"+ "Computer:" + comp_score +"\n"+ "You Win!!");
+  }
+   
+   else if(user_score === comp_score){
+      alert ("Final Score:" +"\n"+"You:" + user_score+"\n"+ "Computer:" + comp_score +"\n"+ "It's a Tie!!");
+  }
+  
+                 
+                 
+            </script>
+            <button><a href="index.html">EXIT</a></button>
+               
+            
+        
+    </body>
+</html>
+
